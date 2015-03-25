@@ -102,7 +102,7 @@ class CustomersController extends \BaseController {
             
             if(count($input) > 0){
                 // validate our input
-                 $validator = Validator::make($input, Customer::$rules);
+                 $validator = Validator::make($input, Customer::$update_rules);
                  
                  if($validator->passes()){
                      // Note: FULL update is performed
