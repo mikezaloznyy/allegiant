@@ -1,0 +1,10 @@
+## YAML Template.
+---
+version: 1
+composer:
+  mode: always
+  method: install
+post-deploy:
+  script: artisan
+  args:
+    - migrate
